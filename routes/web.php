@@ -12,3 +12,5 @@ Route::get('/Tasks/create',[\App\Http\Controllers\Taskscontroller::class,'create
 Route::post('/Tasks',[\App\Http\Controllers\Taskscontroller::class,'store']);
 
 Route::patch('Tasks/{id}',[\App\Http\Controllers\Taskscontroller::class,'update']);
+
+Route::delete('Tasks/{id}',[\App\Http\Controllers\Taskscontroller::class,'delete']);
